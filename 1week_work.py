@@ -1,0 +1,6 @@
+ print("**************")
+    print("Hello Cafe")
+    print("**************")
+    print("1. Coffee")
+    print("2. Juice")
+    menuSelect=input("Make a select") 
