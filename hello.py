@@ -7,7 +7,6 @@ while True:
         print("#"*47)
         print("All sold out. Thank you for using \"Hello Cafe\".")
         print("#"*47)
-
         break
 #When there are some coffee or juice left
     elif initialCoffee>0 or initialJuice>0:
