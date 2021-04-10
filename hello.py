@@ -2,7 +2,7 @@ initialCoffee=3
 initialJuice=2
 while True:
     if initialCoffee==0 and initialJuice==0:
-        print("all sold out")
+        print("All sold out. Thank you for using \"Hello Cafe\".")
         break
     elif initialCoffee>0 or initialJuice>0:
         print("**************")
@@ -10,33 +10,33 @@ while True:
         print("**************")
         print("1. Coffee")
         print("2. Juice")
-        menuSelect=input("Make a select") 
+        menuSelect=input("Please make a selection:") 
         if menuSelect=="1":
             if initialCoffee==0:
-                print("There is no left")
+                print("There is no left coffee.")
             elif initialCoffee>0:
-                print("You choose coffee")
+                print("You choose coffee.")
                 while True:
-                    quantitySelectOfCoffee=int(input("Give a quantity"))
-                    if quantitySelectOfCoffee<=initialCoffee:
-                        print("Here it is")
-                        initialCoffee -=quantitySelectOfCoffee
+                    coffeeQuantity=int(input("Please give a quantity."))
+                    if coffeeQuantity<=initialCoffee:
+                        print("Here it is.")
+                        initialCoffee -=coffeeQuantity
                         break
-                    elif quantitySelectOfCoffee>initialCoffee:
+                    elif coffeeQuantity>initialCoffee:
                         print("There is only {} left.".format(initialCoffee))
                         continue
         if menuSelect=="2":
             if initialJuice==0:
-                print("There is no left")
+                print("There is no left juice.")
             elif initialJuice>0:
-                print("You choose juice")
+                print("You choose juice.")
                 while True:
-                    quantitySelectOfJuice=int(input("Give a quantity"))
-                    if quantitySelectOfJuice<=initialJuice:
-                        print("Here it is")
-                        initialJuice -=quantitySelectOfJuice
+                    juiceQuantity=int(input("Please give a quantity."))
+                    if juiceQuantity<=initialJuice:
+                        print("Here it is.")
+                        initialJuice -=juiceQuantity
                         break
-                    elif quantitySelectOfJuice>initialJuice:
+                    elif juiceQuantity>initialJuice:
                         print("There is only {} left.".format(initialJuice))
                         continue
     
