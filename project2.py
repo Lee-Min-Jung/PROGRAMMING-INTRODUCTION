@@ -22,6 +22,8 @@ def ceil(ave):
     ave2=round(ave)
     return ave2
 
+# lambda eve:round(ave)
+
 main()
 
 
