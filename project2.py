@@ -1,9 +1,9 @@
-
+#A function that takes a grade by input and shows the final grade
 def main():
     mid=float(input("Enter grade on midterm:"))
     final=float(input("Enter grade on final exam:"))
     print("Semester Grade: {}".format(semesterGrade(mid,final)))
-
+#A function that calculates grades and classifies them as 'ABCDF'
 def semesterGrade(mid,final):
     ave=(mid+final*2)/3
     ave2=ceil(ave)
@@ -17,15 +17,9 @@ def semesterGrade(mid,final):
         return "D"
     else:
         return "F"
-
+#A function that round calculated grades
 def ceil(ave):
     ave2=round(ave)
     return ave2
-
-# lambda eve:round(ave)
-
 main()
-
-
-
 
